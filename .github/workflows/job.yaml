@@ -89,7 +89,7 @@ jobs:
                     <server>
                       <id>hello-world-war-2</id>
                       <username>${{ secrets.JFROG_USERNAME }}</username>
-                      <password>${{ secrets.JFROG_API_KEY }}</password>
+                      <password>${{ secrets.JFROG_API_KEY}}</password>
                     </server>
                   </servers>
                 </settings>" > ~/.m2/settings.xml
