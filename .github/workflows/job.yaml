@@ -146,7 +146,7 @@ jobs:
           fi
         if: ${{ needs.upload_artifact.result == 'success' }}  # Deploy only if the artifact upload was successful
         
- # Conditional Job: Trigger Deploy Only if Deploy Input is True (Manual Trigger)
+# Conditional Job: Trigger Deploy Only if Deploy Input is True (Manual Trigger)
   deploy_input_condition:
     # This job will run on the self-hosted runner with the "production" label.
     # Ensure your production runner has the label `production` assigned to it.
