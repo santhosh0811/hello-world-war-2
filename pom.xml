@@ -79,7 +79,7 @@
         </plugins>
     </build>
     <properties>
-           <sonar.organization>surendra1302</sonar.organization>
+           <sonar.organization>santhosh0811</sonar.organization>
            <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 </project>
