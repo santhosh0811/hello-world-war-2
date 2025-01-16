@@ -10,7 +10,7 @@
     <packaging>war</packaging>
 <distributionManagement>
     <repository>
-        <id>hello-world-war-2 </id>
+        <id>hello-world-war-2</id>
         <name>hello-world-war-2-libs-release</name>
         <url>http://43.204.110.90:8082/artifactory/hello-world-war-2-libs-release/</url>
     </repository>
