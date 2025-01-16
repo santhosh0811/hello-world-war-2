@@ -3,12 +3,10 @@ name: Java CI with Maven, SonarQube, and Production Deployment
 on:
   push:
     branches:
-      - master
-      - 'feature/*'
+      - main
   pull_request:
     branches:
-      - master
-      - 'feature/*'
+      - main
   workflow_dispatch:
     inputs:
       deploy:
@@ -21,7 +19,7 @@ jobs:
   build_and_test:
     # This job will run on a self-hosted runner with the "staging" label.
     # Ensure your self-hosted runner for staging has the label `staging` assigned to it.
-    runs-on: [self-hosted, staging]  # Self-hosted EC2 with Tomcat installed (Staging)
+    runs-on: [staging, stg]  # Self-hosted EC2 with Tomcat installed (Staging)
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
